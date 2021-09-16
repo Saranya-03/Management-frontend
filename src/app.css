@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+}
+.others{
+    flex: 4;
+    background-color: rgb(240, 245, 245);
+}
+.link{
+    text-decoration: none;
+    color: inherit;
+}
