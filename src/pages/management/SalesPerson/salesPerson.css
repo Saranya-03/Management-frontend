@@ -1,0 +1,41 @@
+.salesPerson{
+    flex: 4;
+}
+.actionButton{
+    display: flex;
+}
+.editButton{
+    padding: 0px 10px;
+    background-color: rgb(16, 196, 46);
+    border-radius: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+    width: 50px;
+    float: left;
+    height: 30px;
+}
+.deleteButton{
+    cursor: pointer;
+    margin-top: 43px;
+    
+}
+.heading{
+    padding: 0px;
+    
+}
+
+.container{
+    display: flex;
+    
+}
+.addUser{
+    height: 40px;
+    width: 200px;
+    background-color:rgb(16, 196, 46) ;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px;
+    flex: 1;
+    font-size: 15px;
+    font-weight: bolder;
+}
