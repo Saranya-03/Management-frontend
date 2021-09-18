@@ -1,56 +1,67 @@
 import "./newSalesperson.css";
-import React from 'react';
+import PublishIcon from '@material-ui/icons/Publish';
 
 export default function NewUser() {
     return (
-        <div className="newUser">
+        <div className="newUser"><br></br>
             <h1 className="title">Add a New Salesperson</h1>
             <form className="newUserForm">
-                <div className="newUserItems">
-                    <label>FullName</label>
-                    <input placeholder="John Michel" type="text"></input>
-                </div>
-                <div className="newUserItems">
-                    <label>Email Address</label>
-                    <input placeholder="johnMich45@gmail.com" type="email"></input>
-                </div>
-                <div className="newUserItems">
-                    <label>UserName</label>
-                    <input placeholder="john78#" type="text"></input>
-                </div>
-                <div className="newUserItems">
-                    <label>Password</label>
-                    <input placeholder="password" type="password"></input>
-                </div>
-                <div className="newUserItems">
-                    <label>Confirm Password</label>
-                    <input placeholder="confirm password" type="password"></input>
-                </div>
-                
-                <div className="newUserItems">
-                    <label>Date of Birth</label>
-                    <input placeholder="02/07/1994" type="date"></input>
-                </div>
-                <div className="newUserItems">
-                    <label>Phone Number</label>
-                    <input placeholder="+9476283893" type="text"></input>
-                </div>
-                
-                <div className="newUserItems">
-                    <label>Address</label>
-                    <input placeholder="N0.07, 5th lane, Colombo 03, SriLanka" type="text"></input>
-                </div>
-                <div className="newUserItems">
-                    <label>Gender</label>
-                    <div className="row">
-                        <input type="radio" value="male" name="gender"></input>
-                        <label>Male</label>
-                        <input type="radio" value="female" name="gender"></input>
-                        <label>Female</label>
+            <div className="container">
+                <div className="leftContainer">
+                    <div className="newUserItems">
+                        <label>ID Number</label>
+                        <input placeholder="982738272V" type="text"></input>
+                    </div>
+                    <div className="newUserItems">
+                        <label>First Name</label>
+                        <input placeholder="John" type="text"></input>
+                    </div>
+                    <div className="newUserItems">
+                        <label>Last Name</label>
+                        <input placeholder="Michel" type="text"></input>
+                    </div>
+                    <div className="newUserItems">
+                        <label>Email Address</label>
+                        <input placeholder="johnMich45@gmail.com" type="email"></input>
                     </div>
                     
+                    <div className="newUserItems">
+                        <label>Password</label>
+                        <input placeholder="password" type="password"></input>
+                    </div>
+                    <div className="newUserItems">
+                        <label>Confirm Password</label>
+                        <input placeholder="confirm password" type="password"></input>
+                    </div>
+                    <div className="newUserItems">
+                        <label>Phone Number</label>
+                        <input placeholder="+9476283893" type="text"></input>
+                    </div>
+                    
+                    <div className="newUserItems">
+                        <label>Address</label>
+                        <input placeholder="N0.07, 5th lane, Colombo 03, SriLanka" type="text"></input>
+                    </div>
+                    <div className="newUserItems">
+                        <label>City</label>
+                        <input placeholder="Jaffna" type="text"></input>
+                    </div>
+                    <button className="btt">Add</button>
                 </div>
-                <button>Add</button>
+                <div className="rightContainer">
+                    <div className="rightWrapper">
+                        <img className="prImg" src="https://i7.pngguru.com/preview/831/88/865/user-profile-computer-icons-user-interface-mystique.jpg" alt=""></img>
+                        <label className="uploadImg" htmlFor="file"><PublishIcon className="icon"/>Upload</label><br></br>
+                        <input placeholder="img" type="file" id="file" style={{display:"none"} }></input>
+                    
+                        
+
+                    </div>
+                    
+                        
+                </div>
+            </div>
+            
             </form>
         </div>
     )

@@ -1,6 +1,6 @@
 import React from 'react';
 import"./sidebar.css";
-import {LineStyle,Timeline,TrendingUp,Assessment,ShoppingCart,Storefront,PeopleAlt,LocalOffer,LocationOn} from '@material-ui/icons';
+import {LineStyle,Assessment,ShoppingCart,Storefront,PeopleAlt,LocalOffer,LocationOn} from '@material-ui/icons';
 import { Link } from "react-router-dom";
 
 export default function Sidebar() {

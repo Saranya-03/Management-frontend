@@ -20,7 +20,7 @@
     
 }
 .heading{
-    padding: 20px;
+    margin: 20px;
     flex:5;
 }
 .container{
@@ -38,4 +38,8 @@
     flex: 1;
     font-size: 15px;
     font-weight: bolder;
+}
+.imag{
+    height: 32px;
+    width: 32px;
 }

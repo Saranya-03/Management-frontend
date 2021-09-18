@@ -4,7 +4,7 @@ import PublishIcon from '@material-ui/icons/Publish';
 
 export default function NewProduct() {
     return (
-        <div className="newProduct">
+        <div className="newProduct"><br></br>
             <h1 className="title">Add a New Product</h1>
             <form className="newProductForm">
                 <div className="newProductItems">
@@ -35,7 +35,7 @@ export default function NewProduct() {
                                 <br></br><label htmlFor="file" className="upload"><PublishIcon />Upload Image</label><br></br>
                                 <input placeholder="img" type="file" id="file" style={{display:"none"} }></input>
                             </div>
-                            <button>Add Product</button>
+                            <button className="butt">Add Product</button>
                         </div>
                     </div>
                 </div>

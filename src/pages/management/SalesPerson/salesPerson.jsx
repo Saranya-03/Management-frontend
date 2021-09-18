@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import React from 'react'
 import { DataGrid } from '@material-ui/data-grid';
 import {rows} from "../../../dataCollection";
-import {Delete} from '@material-ui/icons';
+import {Delete, SportsMma} from '@material-ui/icons';
 
 
 export default function SalesPerson() {
@@ -17,33 +17,52 @@ export default function SalesPerson() {
 const columns = [
     { 
     field: 'id', 
-    headerName: 'ID', 
-    width: 90 },
+    headerName: "ID", 
+    width: 120 },
     {
       field: 'fullName',
       headerName: 'Full Name',
-      width: 200,
-      editable: true,
-      renderCell: (params)=>{
+      width: 150,
+      renderCell:(params)=>{
         return(
-            <div>
-                <span>{params.row.fullName}</span>
-            </div>
+          <div>
+            {params.row.firstName}
+            <span>  </span>
+            {params.row.lastName}
+          </div>
         )
-        }
+      }
       
-    },
+     },
+     {
+      field: 'avatar',
+      headerName: 'Profile',
+      width: 100,
+      renderCell:(params)=>{
+        return(
+          <img className="image" src={params.row.avatar} alt=""></img>
+        )
+      }
+     },
+     {
+      field: 'city',
+      headerName: 'City',
+      width: 130,
+     },
     {
       field: 'email',
       headerName: 'Email',
-      width: 300,
-      editable: true,
-    },
+      width: 200,
+     },
+     {
+      field: 'joinedDate',
+      headerName: 'Joined Date',
+      width: 120,
+     },
     {
       field: 'phoneNo',
       headerName: 'Phone Number',
-      width: 200,
-      editable: true,
+      width: 120,
     },
     {
       field: 'action',
@@ -53,8 +72,8 @@ const columns = [
           return (
               <div className="actionButton">
                 
-                <Link to={"/SalesPerson/"+params.row.id}>
-                    <button className="editButton">Edit</button>
+                <Link to={"/management/salesPerson/"+params.row.id}>
+                    <button className="editButton">View</button>
                 </Link>
                 
                          

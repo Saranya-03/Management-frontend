@@ -23,27 +23,35 @@ const columns = [
       field: 'productName',
       headerName: 'pName',
       width: 300,
-      editable: true,
-      renderCell: (params)=>{
+         
+    },
+    { 
+      field: 'avatar', 
+      headerName: 'Image', 
+      width: 100 ,
+      renderCell:(params)=>{
         return(
-            <div>
-                <span>{params.row.productName}</span>
-            </div>
+          <img className="imag" src={params.row.avatar} alt=""></img>
         )
-        }
-      
+      }
     },
     {
       field: 'amount',
       headerName: 'Stock Amount',
       width: 100,
-      editable: true,
+      
     },
     {
       field: 'unitPrice',
       headerName: 'Email',
-      width: 200,
-      editable: true,
+      width: 120,
+      
+    },
+    {
+      field: 'active',
+      headerName: 'Active',
+      width: 120,
+    
     },
     {
       field: 'action',
@@ -53,8 +61,8 @@ const columns = [
           return (
               <div className="actionButton">
                 
-                <Link to={"/Product/"+params.row.id}>
-                    <button className="editButton">Edit</button>
+                <Link to={"/management/products/"+params.row.productName}>
+                    <button className="editButton">View</button>
                 </Link>
                 
                          

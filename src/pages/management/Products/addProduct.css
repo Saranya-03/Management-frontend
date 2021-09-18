@@ -43,8 +43,10 @@
     box-shadow: teal;
     border-block-color:rgb(85, 87, 90); ;
     border-color: rgb(85, 87, 90);
+    margin-bottom: 15px;
 }
 .leftItems select{
+    margin-bottom: 15px;
     width: 97%;
     border-color: black;
     border-width: 2px;
@@ -65,16 +67,18 @@
     border-radius: 40px;
     
 }
-button{
+.butt{
     height: 40px;
     width: 200px;
     background-color:rgb(16, 196, 46) ;
     border-radius: 10px;
     cursor: pointer;
-    margin: 40px;
+    margin: 10px;
     font-size: 15px;
     font-weight: bolder;
-    float: none;
+    float: left;
+    margin-left: 55px;
+    margin-top: 300px;
 }
 .upload{
     padding: 10px;

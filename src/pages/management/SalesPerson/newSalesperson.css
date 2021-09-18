@@ -4,20 +4,30 @@
 .title{
     padding:20px;
 }
+.container{
+    display:flex;
+}
+.leftContainer{
+    flex:5;
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.rightContainer{
+    flex:1;
+}
 
 .newUserItems{
     padding: 10px 10px;
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: column;
-}
-.newUserForm{
-    display: flex;
-    flex-wrap: wrap;
 }
 .newUserItems label{
     padding: 10px;
     color: rgb(58, 66, 73);
+    padding-bottom: 30px;
 }
 .newUserItems input{
     height: 40px;
@@ -27,11 +37,10 @@
     box-shadow: teal;
     border-block-color:rgb(85, 87, 90); ;
     border-color: rgb(85, 87, 90);
+    
 }
-.row{
-    display: flex;
-    padding-right: 20px;
-}
+
+
 button{
     height: 40px;
     width: 200px;
@@ -42,4 +51,25 @@ button{
     font-size: 15px;
     font-weight: bolder;
     float: right;
+}
+.prImg{
+    height:200px;
+    width:200px;
+}
+.rightWrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: -40px;
+}
+.uploadImg{
+    padding-left: 60px;
+    cursor: pointer;
+    
+}
+.btt{
+    margin-top: 52px;
+    float: right;
+    height: 45px ;
+    margin-left: 130px;
 }

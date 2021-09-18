@@ -1,5 +1,6 @@
 .salesPerson{
     flex: 4;
+    
 }
 .actionButton{
     display: flex;
@@ -21,6 +22,7 @@
 }
 .heading{
     padding: 0px;
+    margin: 20px;
     
 }
 
@@ -38,4 +40,9 @@
     flex: 1;
     font-size: 15px;
     font-weight: bolder;
+}
+.image{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
 }
