@@ -1,5 +1,6 @@
 .salesPerson{
     flex: 4;
+    background-color: rgba(236, 234, 234, 0.699);
     
 }
 .actionButton{
@@ -11,7 +12,7 @@
     border-radius: 10px;
     margin-right: 20px;
     cursor: pointer;
-    width: 50px;
+    width: 100px;
     float: left;
     height: 30px;
 }

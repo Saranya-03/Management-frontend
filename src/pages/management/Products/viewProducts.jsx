@@ -17,20 +17,12 @@ export default function viewProducts() {
                         </div>
                     </div>
                     <div className="detailSub">
-                        <p className="detail">Unit Price : <span className="value">LKR 45000 </span></p>
+                        <p className="detail">Unit Price : <span className="value">LKR 45000.00 </span></p>
                         <p className="detail">Stock Amount : <span className="value"> 25</span></p>
                         <p className="detail"> Category : <span className="value">Phone</span></p>
                         <p className="detail">Active : <span className="value">Yes </span></p>
-                        <p className="detail">Specifications:</p>
-                        <ul className="instructions">
-                            <li className="storage">Storage : <span className="value"> 128GB </span></li>
-                            <li>Colors : <span className="value">Black, Pearl White, Iris Purple </span></li>
-                            <li>OS	Android : <span className="value">8.1 (Oreo) </span></li>
-                            <li>RAM :	<span className="value">4GB </span></li>
-                            <li>Display Size :	<span className="value">6.3 inches, 97.4 cm2 </span></li>
-                            <li>Display Resolution :	<span className="value">1080 x 2340 pixels</span></li>
-                            <li>Camera : <span className="value">Dual	16 MP, f/2.2, PDAF 2 MP</span></li>
-                        </ul>
+                        <p className="detail">Specifications:<span className="value">Mobile phone - Huwavie</span></p>
+                        
                     </div>
                     
                 </div>
@@ -49,7 +41,7 @@ export default function viewProducts() {
                                         <option value="audi">HeadPhone</option>
                                     </select><br></br>
                                     <label>Unit Price </label><br></br>
-                                    <input placeholder="30000" type="number"></input><br></br>
+                                    <input placeholder="30000.00" type="number"></input><br></br>
                                     <label>Stock Amount</label><br></br>
                                     <input placeholder="25" type="number"></input><br></br>
                                     <label>Specifications</label><br></br>

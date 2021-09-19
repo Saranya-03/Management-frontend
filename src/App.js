@@ -13,9 +13,12 @@ import SalesPerson from "./pages/management/SalesPerson/salesPerson";
 import AddSalesPerson from "./pages/management/SalesPerson/NewSalesPerson";
 import Shops from "./pages/management/Shops/shops";
 import ViewProducts from './pages/management/Products/viewProducts';
-import AddOrders from "./pages/management/Orders/addOrder";
 import ViewSalesPerson from './pages/management/SalesPerson/viewSalesPerson';
 import ViewOrders from './pages/management/Orders/viewOrder';
+import ViewShop from "./pages/management/Shops/viewShop";
+import AddShop from "./pages/management/Shops/addShop";
+import AddRoute from "./pages/management/Route/addRoute";
+import ViewRoute from "./pages/management/Route/viewRoute";
 
 
 function App() {
@@ -58,26 +61,40 @@ function App() {
             <Route exact path="/management/orders">
               <Orders/>
             </Route>  
-
-            <Route path="/management/orders/addOrders">
-              <AddOrders/>
-            </Route>  
+ 
 
             <Route path="/management/Order/:id">
               <ViewOrders/>
             </Route>  
             
-            <Route path="/management/shops">
+            <Route exact path="/management/shops">
               <Shops/>
             </Route> 
+
+            <Route path="/management/shops/addShop">
+              <AddShop/>
+            </Route> 
+
+            <Route path="/management/shops/:shopName">
+              <ViewShop/>
+            </Route> 
             
-            <Route path="/management/routes">
+            <Route exact path="/management/routes">
               <Routes/>
+            </Route> 
+
+            <Route path="/management/routes/addRoute">
+              <AddRoute/>
+            </Route> 
+
+            <Route path="/management/routes/:id">
+              <ViewRoute/>
             </Route>  
-            
-            <Route path="/management/reports">
+
+            <Route exact path="/management/reports">
               <Reports/>
             </Route> 
+
              
           </Switch>   
       </div>

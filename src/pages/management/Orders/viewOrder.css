@@ -1,3 +1,16 @@
 .viewOrder{
     flex:4;
+    background-color: rgba(236, 234, 234, 0.699);
+}
+.detailCont{
+    margin: 30px;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 4px rgba(239,228,228,0.5);
+    -webkit-box-shadow: 1px 1px 3px 4px rgba(239,228,228,0.5);
+    -moz-box-shadow: 1px 1px 3px 4px rgba(239,228,228,0.5);
+}
+.invTab{
+    margin: 40px;
 }
